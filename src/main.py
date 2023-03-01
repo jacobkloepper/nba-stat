@@ -25,8 +25,8 @@ with open(filename, 'w') as f:
     for game in sb:
         # Extract some other info to tell if the game is over, escape
         game_state = game.get('gameStatus')
-        if (game_state != 3):
-            continue
+        #if (game_state != 3):
+        #    continue
 
         home_info = game.get('homeTeam')
         home_tricode = home_info.get('teamTricode')

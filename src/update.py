@@ -24,6 +24,7 @@ for game in game_stats:
     #home_team = game[2]
     #home_fin = game[3]
 
+
     # update teams
     for i in range(0,2):
         for r in range(2,32):
@@ -33,7 +34,7 @@ for game in game_stats:
                     if (ws.cell(row=r, column=c).value != None):
                         last_val = ws.cell(row=r, column=c).value
                     else:
-                        #print(f"{last_val} at ({r}, {c})")
+                        print(f"{last_val} at ({r}, {c})")
                         break
 
                 # (r, c) is the cell to be updated
