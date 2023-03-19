@@ -39,7 +39,7 @@ for game in game_stats:
                         last_val = ws.cell(row=r, column=c).value
                     else:
                         #print(f"{last_val} at ({r}, {c})")
-                        print(f"{game[0]} {game[1]}")
+                        print(f"{game[2*i]} {game[2*i+1]}")
                         break
 
                 # (r, c) is the cell to be updated
